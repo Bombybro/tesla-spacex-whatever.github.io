@@ -1,0 +1,66 @@
+img {
+    width: 50px;
+}
+/* ↑ This is temporary, makes it easier to see the layout changes I'm making. */
+@media screen and (max-width: 750px) {
+    #product {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+.headerlink {
+    text-align: center;
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+#tophalf {
+    display: flex;
+    justify-content: end;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    background-color: #4F2133;
+    padding-top: 20px;
+}
+#bottomhalf {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    background-color: #4F2133;
+}
+/* I put the colors in now so I could see all the text and images. */
+#index {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+}
+.footlogo {
+    padding-inline: 10px;
+}
+#product {
+    display: flex;
+    justify-content: center;
+    overflow-x: scroll;
+}
+.propreview {
+    display: flex;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+}
