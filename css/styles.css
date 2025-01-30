@@ -7,23 +7,31 @@ img {
         display: flex;
         flex-wrap: wrap;
     }
+    #contact {
+        flex-direction: column;
+    }
 }
 header {
+    position: relative;
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 100%;
+    background-color: aliceblue;
 }
 .headerlink {
     text-align: center;
 }
 footer {
     display: flex;
+    height: 10px;
     flex-direction: column;
     position: absolute;
     bottom: 0px;
     left: 0px;
     right: 0px;
+    top: 900px;
+    border-top: 300px;
 }
 #tophalf {
     display: flex;
@@ -33,6 +41,7 @@ footer {
     flex-direction: row;
     background-color: #4F2133;
     padding-top: 20px;
+    border-top: 300px;
 }
 #bottomhalf {
     display: flex;
@@ -45,6 +54,7 @@ footer {
 }
 /* I put the colors in now so I could see all the text and images. */
 #index {
+    position: relative;
     display: flex;
     text-align: center;
     align-items: center;
@@ -54,13 +64,26 @@ footer {
     padding-inline: 10px;
 }
 #product {
+    position: relative;
     display: flex;
     justify-content: center;
-    overflow-x: scroll;
+}
+#product::after {
+    content: '';
+    height: 80px;
 }
 .propreview {
     display: flex;
     align-content: center;
     text-align: center;
     justify-content: center;
+}
+#contact {
+    position: relative;
+    display: flex;
+}
+#indexbody {
+    background-image: url(../media/1200x675_cmsv2_a2f6117d-9f04-59af-bf4d-eca40a21c1c7-8994426.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
