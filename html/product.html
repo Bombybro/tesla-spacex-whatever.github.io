@@ -5,18 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Products</title>
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/fontawesome.min.css">
 </head>
 <body>
     <header>
         <img src="../media/default_icon.png" alt="Logo">
+        <a class="icon" onclick="openMobileNavigationMenu()"><i class="fa fa-bars"></i></a>
         <a class="headerlink" href="../index.html">Home</a>
         <a class="headerlink" href="../html/product.html">Products</a>
         <a class="headerlink" href="../html/product.html">Contact</a>
     </header>
     <div id="product">
-        <div class="propreview"><a href="https://en.wikipedia.org/wiki/5GBioShield"><img src="/Lesson 5/media/anti-5g-usb-stick-5gbioshield.jpg" alt="5G Bioshield"><h1>5G BioShield</h1><p>This 5G BioShield will protect you and your family from harmful 5G radiation and brainwashing.</p></a></div>
-        <div class="propreview"><a href="https://displate.com/displate/5552801"><img src="/Lesson 5/media/elonmuskposter.webp" alt="Elon Musk Poster"><h1>Elon Musk Poster</h1><p>This freaking based poster of Elon Musk smoking on Joe Rogan.</p></a></div>
-        <div class="propreview"><a href="https://www.boringcompany.com/not-a-flamethrower"><img src="/Lesson 5/media/flamethrower.webp" alt="Flamethrower"><h1>Flamethrower</h1><p>Another freaking awesome product by our savior, Elon Musk. He's sooooo based and redpilled.</p></a></div>
+        <div class="propreview"><a href="https://en.wikipedia.org/wiki/5GBioShield"><img src="../media/anti-5g-usb-stick-5gbioshield.jpg" alt="5G Bioshield"><h1>5G BioShield</h1><p>This 5G BioShield will protect you and your family from harmful 5G radiation and brainwashing.</p></a></div>
+        <div class="propreview"><a href="https://displate.com/displate/5552801"><img src="../media/elonmuskposter.webp" alt="Elon Musk Poster"><h1>Elon Musk Poster</h1><p>This freaking based poster of Elon Musk smoking on Joe Rogan.</p></a></div>
+        <div class="propreview"><a href="https://www.boringcompany.com/not-a-flamethrower"><img src="../media/flamethrower.webp" alt="Flamethrower"><h1>Flamethrower</h1><p>Another freaking awesome product by our savior, Elon Musk. He's sooooo based and redpilled.</p></a></div>
     </div>
     <footer>
         <div id="tophalf">
@@ -30,5 +32,15 @@
             <a href="https://www.tesla.com/legal/terms">Terms of Service</a>
         </div>
     </footer>
+    <script>
+        function openMobileNavigationMenu() {
+         var x = document.getElementById("navigation");
+         if (x.className === "") {
+         x.className += "responsive";
+         } else {
+         x.className = "";
+         }
+        }
+        </script>
 </body>
 </html>
